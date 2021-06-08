@@ -6,12 +6,14 @@ After the 2020 pandemic induced ride in the stock market, 2021 opened with it's 
 Two stocks, GameStop (NYSE:GME) and AMC Theatres (NYSE:AMC) were viewed by Wall Street
 professionals as stocks on the way down. 
 
---Insert GME logo
+![GME logo](PNG/GME.png "GME logo")
+
 GameStop (GME) is a company that sells video games and surrounding products. 
 With video gamers increasingly downloading games directly, GameStop seemed poised 
 to suffer a similar fate as Blockbuster Video and Borders Books. 
 
---insert AMC logo
+![AMC logo](PNG/AMC.png "AMC logo")
+
 AMC Theatres(AMC) was hit hard by the pandemic shut downs. Movie theatres remained closed for over a year
 with major studios holding back major releases until fans were ready to go back to the theatre, or the studios started releasing new films directly to their streaming services. The success of the streaming releases indicated that movie thetres may never return to the big crowds previously experienced.
 
@@ -22,7 +24,7 @@ The stock market rebound during the second half of 2020 was accompanied by the g
 FinTech firms that were designed to make stock investing easier for new and/or small investors. 
 With the markets rising and stimulus checks flowing, many new investors entered the market.
 
---Insert Picture Robinhood
+![Robinhood logo](PNG/Robinhoodlogo.png "Robinhood logo")
 
 Many of these new investors joined other "Main Street not Wall Street" investors in on 
 online forums such as Reddit, to gain knowledge and share investing tips. One of the more
@@ -42,32 +44,36 @@ We decided to analyze the following questions raised by the Meme Stock phenomena
 
 We downloaded the GME and AMC data from the Alpaca API from January 1st, 2021 through the end of May. We compared the close date data with the S&P 500 stock index (NYSE:SPY). Here's what we found:
 
---Insert graph
+![Meme Stock Daily Returns](PNG/meme_stock_plot.png "Daily Returns")
 
 By this graph it looks like the meme stocks only perform well on certain dates but over all follow the S&P 500.
 
 Then we calculated and graphed the cumulative returns:
 
---Insert graph
+![Meme Stock Cumulative Returns](PNG/cumulative_returns_plot.png "Cumulative Returns")
 
 This showed that over the first five months of 2021, the cumulative returns of the meme stocks were clearly superior to the S&P 500.
 
 We did a risk anlaysis comparison of the three:
 
---Insert graph
+![Meme Stock Risk](PNG/risk_plot.png "Risk")
 
 Then we did calculated the standard deviation and the annualized standard deviation for the three tickers. Unsurprisingly, the both the standard deviation and annualzed standard deviations for GME and AMC were much higher than for the S&P 500:
 
 **Standard Deviation**
 
 AMC    5.223645
+
 GME    4.102531
+
 SPY    0.143349
 
 **Annualized Standard Deviation**
 
 AMC    5.223645
+
 GME    4.102531
+
 SPY    0.143349
 
 Next we calculated the Shape Ratios. Sharpe Ratios are a standard way of assesing risk vs reward. Generally,
@@ -76,10 +82,12 @@ the higher the Sharpe Ratio the better. Above 2 is good and above 3 is excellent
 **Sharpe Ratio**
 
 AMC    2.351388
+
 GME    3.286217
+
 SPY    2.337867
 
---Insert graph
+![Meme Stock Sharpe Ratios](PNG/sharpe_ratios_plot.png "Sharpe Ratios")
 
 Sharpe Ratios above 2 are good and above 3 are excellent. AMC is lightly better than S&P 500 while GME is excellent. 
 
@@ -115,7 +123,7 @@ We pulled crypto currency data from the CoinApi. As free API, CoinAPI limited us
 We then calulated cumulative daily returns and merged this with our cumulative dailey returns for the meme stocks.
 What we found was this:
 
---Insert graph
+![Meme vs Crypto Cumulative](PNG/Meme_vs_Crypto_cum.png "Meme Crypto Cumulative")
 
 If the meme stock investors and the meme coin investors are rolling money back and forth between those investments, there should be a negative correlation shown between meme stocks and meme coins daily cumulative return. Except for a few short days at the beginning of April, this does not appear to occur. In fact, the large January surge in meme stocks is almost mirrored by large gains in Dogecoin. 
 
@@ -130,7 +138,7 @@ The accepted narrative is that meme stock prices are driven by online forum disc
 
 We used the praw, the Python Reddit API Wrapper to extract top mentions of GME and AMC and variations of their names from the wallstreetbets subreddit. We then counted the number of mentions per day:
 
---Insert graph
+![WallStreetBets](PNG/wsb_mentions.PNG "Mentions")
 
 We then combined that data with our daily cumulative returns data for the meme stocks. 
 
