@@ -95,7 +95,8 @@ We then performed a Monte Carlo simulation alaysis of a portfolio consisting of 
 
 Using the first five months as our historical data we ran a one year projection through ten thousand simulations.
 
---Insert graph
+![Meme Stock Monte Carlo Sim](PNG/MC_Sim.PNG "10,000 Simulations")
+
 
 We then assumed an initail investment amount of $1,000 (this seemed reasonable as many of the meme stock investors are smaller retail investors).
 
